@@ -1,0 +1,18 @@
+
+mat-card {
+    width: 50%;
+    margin: 20vh auto;
+    display: flex;
+    flex-direction: column;
+}
+mat-card img { max-width: 30%; margin:auto}
+mat-card div{
+
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+mat-card div button{
+    max-width: 120px;
+    margin: auto;
+}
