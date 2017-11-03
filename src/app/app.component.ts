@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { ViewChild, ElementRef, Component } from '@angular/core';
 import { LoginService } from './login.service';
+import set = Reflect.set;
 
 @Component({
   selector: 'app-root',
@@ -9,9 +10,14 @@ import { LoginService } from './login.service';
 })
 
 export class AppComponent {
+
+  @ViewChild('uid') uidEl:ElementRef;
   state = 0; // 1 = invalid, 2 = reset, 3 = valid, 4 = continue
-  constructor(private loginService: LoginService) { }
-  onEnter
+
+  constructor(private loginService: LoginService) {
+    setTimeout(()=>{this.uidEl.nativeElement.focus()}, 3000)
+  }
+
   login(event, uid, pwd){
     //alert('login ' + uid + pwd);
 
