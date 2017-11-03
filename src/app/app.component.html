@@ -3,28 +3,29 @@
     the content
 </mat-card>
 
-<mat-card *ngIf="state!==4" [ngClass]="{'bounceInDown': state=== 0, 'shake': state===1, 'pulse': state===2, 'bounceOutDown': state===3 }"
+<mat-card *ngIf="state!==4"
+          [ngClass]="{'bounceInDown': state=== 0, 'shake': state===1, 'pulse': state===2, 'bounceOutDown': state===3 }"
           class="animated">
+    <img src="../assets/img/logo.svg"/>
+    <div>
+        <h4>Please login</h4>
+        <mat-form-field>
+            <input #uid autofocus
+                   matInput placeholder="User Id">
+        </mat-form-field>
 
-        <img src="../assets/img/logo.svg"/>
+        <mat-form-field>
+            <input #pwd
+                   (keyup.enter)="login($event, uid.value, pwd.value)"
+                   matInput type="password" placeholder="Password">
+        </mat-form-field>
 
-        <div>
-            <h4>Please login</h4>
-            <mat-form-field>
-                <input #uid matInput placeholder="UserId">
-            </mat-form-field>
-
-            <mat-form-field>
-                <input #pwd type="password" matInput placeholder="Password">
-            </mat-form-field>
-
-            <button (click)="login($event, uid.value, pwd.value)" mat-raised-button color="primary">
-                <mat-icon>favorite</mat-icon>
-                Login
-            </button>
-        </div>
-
-
+        <button (click)="login($event, uid.value, pwd.value)"
+                mat-raised-button color="primary">
+            <mat-icon>favorite</mat-icon>
+            Login
+        </button>
+    </div>
 </mat-card>
 
 

@@ -11,7 +11,7 @@ import { LoginService } from './login.service';
 export class AppComponent {
   state = 0; // 1 = invalid, 2 = reset, 3 = valid, 4 = continue
   constructor(private loginService: LoginService) { }
-
+  onEnter
   login(event, uid, pwd){
     //alert('login ' + uid + pwd);
 
