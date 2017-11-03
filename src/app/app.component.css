@@ -15,4 +15,12 @@ mat-card div{
 mat-card div button{
     max-width: 120px;
     margin: auto;
+    background: rgb(227, 0, 15);
+}
+#heart {
+    height: 256px;
+    width: 256px;
+    font-size: 256px;
+    margin: auto;
+    color: rgb(227, 0, 15);
 }
