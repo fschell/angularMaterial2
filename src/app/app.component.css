@@ -24,3 +24,11 @@ mat-card div button{
     margin: auto;
     color: rgb(227, 0, 15);
 }
+/*
+::ng-deep .mat-focused .mat-form-field-placeholder {
+    color: rgb(227, 0, 15);;
+}
+::ng-deep .mat-form-field-ripple {
+    background-color: rgb(227, 0, 15);
+}
+*/

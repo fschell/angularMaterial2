@@ -1,16 +1,16 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 
 @Injectable()
 export class LoginService {
 
     users = [
-        { uid:'fs', pwd: 'test'},
-        { uid:'cr', pwd: '15MadtMK'}
-        ];
+        {uid: 'fs', pwd: 'test'},
+        {uid: 'cr', pwd: '15MadtMK'}
+    ];
 
-    evaluate(uid, pwd){
+    evaluate(uid, pwd) {
 
-        for (let user of this.users){
+        for (let user of this.users) {
             if (user.uid === uid && user.pwd === pwd)
                 return true;
         }
