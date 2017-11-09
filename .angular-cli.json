@@ -20,7 +20,7 @@
       "prefix": "app",
       "styles": [
         "styles.css",
-        "assets/theme/cadigit-app-theme.scss"
+        "lib/core/theming/_theming.scss"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",

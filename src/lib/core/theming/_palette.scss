@@ -1,27 +1,27 @@
 /* For use in src/lib/core/theming/_palette.scss */
-$md-mcgpalette0: (
-        50 : #eeece4,
-        100 : #d6cfba,
-        200 : #baaf8d,
-        300 : #9e8f5f,
-        400 : #8a773c,
-        500 : #755f1a,
-        600 : #6d5717,
-        700 : #624d13,
-        800 : #58430f,
-        900 : #453208,
-        A100 : #ffd07b,
-        A200 : #ffbe48,
-        A400 : #ffac15,
-        A700 : #fba200,
+/* generated via: http://mcg.mbitson.com/#!?mcgpalette0=%236aa84f&themename=mcgtheme */
+$mat-cadigit: ( 50 : #edf5ea,
+        100 : #d2e5ca,
+        200 : #b5d4a7,
+        300 : #97c284,
+        400 : #80b569,
+        500 : #6aa84f,
+        600 : #62a048,
+        700 : #57973f,
+        800 : #4d8d36,
+        900 : #3c7d26,
+        A100 : #cdffbe,
+        A200 : #a6ff8b,
+        A400 : #7fff58,
+        A700 : #6cff3f,
         contrast: (
                 50 : #000000,
                 100 : #000000,
                 200 : #000000,
                 300 : #000000,
-                400 : #ffffff,
-                500 : #ffffff,
-                600 : #ffffff,
+                400 : #000000,
+                500 : #000000,
+                600 : #000000,
                 700 : #ffffff,
                 800 : #ffffff,
                 900 : #ffffff,
@@ -29,6 +29,5 @@ $md-mcgpalette0: (
                 A200 : #000000,
                 A400 : #000000,
                 A700 : #000000,
-        )
-);
+        ));
 
