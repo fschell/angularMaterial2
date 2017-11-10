@@ -1,14 +1,17 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<mat-card *ngIf="state===4" ngClass="animated bounceInDown">
+<mat-card *ngIf="state===4"
+          [class.themeDark]="isDark"
+          ngClass="animated bounceInDown">
     <mat-icon id="heart" ngClass="animated pulse infinite">favorite</mat-icon>
 </mat-card>
 
 <mat-card *ngIf="state!==4"
+          [class.theme-dark]="isDark"
           [ngClass]="{'bounceInDown': state=== 0, 'shake': state===1, 'pulse': state===2, 'bounceOutDown': state===3 }"
           class="animated">
     <img src="../assets/img/logo.svg"/>
     <div>
-        <h4>Please login</h4>
+        <h4>Login to Treatment Manager</h4>
         <mat-form-field>
             <input #uid
                    matInput placeholder="User Id">
@@ -19,13 +22,20 @@
                    (keyup.enter)="login($event, uid.value, pwd.value)"
                    matInput type="password" placeholder="Password">
         </mat-form-field>
+    </div>
 
         <button (click)="login($event, uid.value, pwd.value)"
                 mat-raised-button color="primary">
             <mat-icon>favorite</mat-icon>
             Login
         </button>
-    </div>
+
+        <mat-action-row>
+            <div><a>Registrieren</a></div>
+            <div><a>Kennwort vergessen</a></div>
+            <div><mat-checkbox (change)="isDark = !isDark">dark</mat-checkbox></div>
+        </mat-action-row>
+
 </mat-card>
 
 

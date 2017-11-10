@@ -1,20 +1,23 @@
 
 mat-card {
-    width: 50%;
+    width: 540px;
     margin: 20vh auto;
     display: flex;
     flex-direction: column;
 }
+mat-card.theme-dark{
+    background: #474349;
+}
 mat-card img { max-width: 30%; margin:auto}
 mat-card div{
-
+    text-align: center;
     margin: auto;
     display: flex;
     flex-direction: column;
 }
-mat-card div button{
+mat-card button{
     max-width: 120px;
-    margin: auto;
+    margin: 20px auto;
     background: rgb(227, 0, 15);
 }
 #heart {
@@ -23,6 +26,18 @@ mat-card div button{
     font-size: 256px;
     margin: auto;
     color: rgb(227, 0, 15);
+}
+mat-action-row{
+    display: flex;
+    opacity: 0.4;
+}
+mat-action-row:hover{
+    opacity: 1;
+}
+mat-action-row div{
+    flex: auto;
+    align-self: center;
+    min-width: 175px;
 }
 /*
 ::ng-deep .mat-focused .mat-form-field-placeholder {

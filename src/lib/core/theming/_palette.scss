@@ -1,6 +1,7 @@
 /* For use in src/lib/core/theming/_palette.scss */
 /* generated via: http://mcg.mbitson.com/#!?mcgpalette0=%236aa84f&themename=mcgtheme */
-$mat-cadigit: ( 50 : #edf5ea,
+$mat-cadigit: (
+        50 : #edf5ea,
         100 : #d2e5ca,
         200 : #b5d4a7,
         300 : #97c284,
@@ -30,4 +31,38 @@ $mat-cadigit: ( 50 : #edf5ea,
                 A400 : #000000,
                 A700 : #000000,
         ));
+
+$mat-cadigit2: (
+        50 : #f6ece1,
+        100 : #e9cfb4,
+        200 : #daaf83,
+        300 : #cb8f51,
+        400 : #bf772b,
+        500 : #b45f06,
+        600 : #ad5705,
+        700 : #a44d04,
+        800 : #9c4303,
+        900 : #8c3202,
+        A100 : #ffccb8,
+        A200 : #ffa785,
+        A400 : #ff8252,
+        A700 : #ff7039,
+        contrast: (
+                50 : #000000,
+                100 : #000000,
+                200 : #000000,
+                300 : #000000,
+                400 : #000000,
+                500 : #ffffff,
+                600 : #ffffff,
+                700 : #ffffff,
+                800 : #ffffff,
+                900 : #ffffff,
+                A100 : #000000,
+                A200 : #000000,
+                A400 : #000000,
+                A700 : #000000,
+        )
+);
+
 
