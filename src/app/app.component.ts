@@ -10,24 +10,24 @@ import { LoginService } from './login.service';
 
 export class AppComponent {
 
-  @ViewChild('uid') uidEl:ElementRef;
+  @ViewChild('uid') uidEl: ElementRef;
   state = 0; // 1 = invalid, 2 = reset, 3 = valid, 4 = continue
-  isDark:boolean = false;
+  isDark = false;
 
   constructor(private loginService: LoginService) {
-    setTimeout(()=>{this.uidEl.nativeElement.focus()}, 3000)
+    setTimeout(() => { this.uidEl.nativeElement.focus(); }, 3000);
   }
 
-  login(event, uid, pwd){
-    //alert('login ' + uid + pwd);
+  login(event, uid, pwd) {
+    // alert('login ' + uid + pwd);
 
     if (this.loginService.evaluate(uid, pwd)){
         this.state = 3;
-        setTimeout(()=> this.state = 4, 1000);
+        setTimeout(() => this.state = 4, 1000);
         return;
     }
     this.state = 1;
-    setTimeout(()=> this.state = 2, 1000);
+    setTimeout(() => this.state = 2, 1000);
     console.log(event);
   }
 

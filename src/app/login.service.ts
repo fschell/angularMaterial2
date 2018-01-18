@@ -10,9 +10,10 @@ export class LoginService {
 
     evaluate(uid, pwd) {
 
-        for (let user of this.users) {
-            if (user.uid === uid && user.pwd === pwd)
-                return true;
+        for (const user of this.users) {
+            if (user.uid === uid && user.pwd === pwd) {
+              return true;
+            }
         }
 
         return false;
